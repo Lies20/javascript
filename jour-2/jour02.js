@@ -34,8 +34,8 @@
 
 // Exercice 6 
 
-let limit = 50;
-let score = 64;
+// let limit = 50;
+// let score = 64;
 
 
 // if (score < limit) {
@@ -46,11 +46,24 @@ let score = 64;
  
 // Exercice 7 
 
-let password ="azerty";
-if( password.length > 5 ) {
-    console.log("the password is secure")
- }
+//  let password ="azerty";
+// if( password.length > 5 ) {
+//     console.log("the password is secure")
+//  }
 
+// Exercice 8 
+let limit = 1000;
+let score = 64;
+let password ="azerty";
+
+if (score < limit && password.length < 5) {
+     console.log("Everything is good")
+    }
+else if ( score > limit || password.length < 5){
+    console.log("Something is good")
+}else{
+    console.log("Nothing is good")
+}
     
 
 
