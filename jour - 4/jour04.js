@@ -28,13 +28,23 @@ let cat2 = {
 
 //   cat = cat.length
 
-let cats = [cat, cat2]
-//  console.log(cats);
-//  console.log( cats.values[1]);
+// let cats = [cat, cat2]
+// //  console.log(cats);
+// //  console.log( cats.values[1]);
 
- for (i=2;i<cats.length;i++)
-{console.log(cats[i]); 
-}
+//  for (i=2;i<cats.length;i++)
+// {console.log(cats[i]); 
+// }
  
 
-    
+    // Exercice 3 even
+function chekIfEven(num){
+    if(num%2===0){
+        console.log("ce nombre est pair")
+    }else{
+        console.log("ce nombre est impair")
+    }
+}
+
+chekIfEven(5);
+ 
