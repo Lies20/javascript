@@ -49,13 +49,28 @@ let cat2 = {
  
 // Exercice 4 compare
 
- function compare(num1,num2){
-     if(num1>num2){
-         console.log(num1 +" "+ "is bigger");
-     }
-     else if( num2>num1)
-     console.log(num2 + "is bigger");
-     }
-     console.log("both are the same ");
+//  function compare(num1,num2){
+//      if(num1>num2){
+//          console.log(num1 +" "+ "is bigger");
+//      }
+//      else if( num2>num1)
+//      console.log(num2 + "is bigger");
+//      }
+//      console.log("both are the same ");
 
- compare(12,12);
+//  compare(12,12);
+
+// Exerice 5 Add Up 
+
+    
+function addUp(num){
+    let i = 0
+    let total =0;
+    
+    for ( i = 0 ; i <= num; i++ ) {
+            total = total + i
+        }
+        console.log(total)
+}
+    
+addUp(12);
