@@ -38,13 +38,24 @@ let cat2 = {
  
 
     // Exercice 3 even
-function chekIfEven(num){
-    if(num%2===0){
-        console.log("ce nombre est pair")
-    }else{
-        console.log("ce nombre est impair")
-    }
-}
-
-chekIfEven(5);
+// function chekIfEven(num){
+//     if(num%2===0){
+//         console.log("ce nombre est pair")
+//     }else{
+//         console.log("ce nombre est impair")
+//     }
+// }
+// chekIfEven(5);
  
+// Exercice 4 compare
+
+ function compare(num1,num2){
+     if(num1>num2){
+         console.log(num1 +" "+ "is bigger");
+     }
+     else if( num2>num1)
+     console.log(num2 + "is bigger");
+     }
+     console.log("both are the same ");
+
+ compare(12,12);
