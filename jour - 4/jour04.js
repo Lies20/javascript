@@ -8,36 +8,34 @@
 // console.log(cat.age);
 
 // if(cat.isCute===true){
-//     console.log("true");
+//     console.log("So cute");
 // }
 
 
 //   Exercice 2 combine 
 
-let cat = {
-        name:"garfield",
-        ages : 5,
-        isCute : true,
-    };
-    
-let cat2 = {
-    name : "bijou",
-    age : 23,
-    isCute : false,
-};
+// let cat = {
+//         name:"garfield",
+//         ages : 5,
+//         isCute : true,
+//     };
 
-//   cat = cat.length
+// let cat2 = {
+//     name : "bijou",
+//     age : 23,
+//     isCute : false,
+// };
 
 // let cats = [cat, cat2]
 // //  console.log(cats);
-// //  console.log( cats.values[1]);
+    // console.log(cats[0].age);
+    // console.log(cats[1].isCute)
 
-//  for (i=2;i<cats.length;i++)
-// {console.log(cats[i]); 
-// }
- 
 
-    // Exercice 3 even
+
+
+
+// Exercice 3 even
 // function chekIfEven(num){
 //     if(num%2===0){
 //         console.log("ce nombre est pair")
@@ -46,7 +44,7 @@ let cat2 = {
 //     }
 // }
 // chekIfEven(5);
- 
+
 // Exercice 4 compare
 
 //  function compare(num1,num2){
@@ -62,15 +60,28 @@ let cat2 = {
 
 // Exerice 5 Add Up 
 
-    
-function addUp(num){
-    let i = 0
-    let total =0;
-    
-    for ( i = 0 ; i <= num; i++ ) {
-            total = total + i
-        }
-        console.log(total)
+
+// function addUp(num){
+//     let i = 0
+//     let total =0;
+
+//     for ( i = 0 ; i <= num; i++ ) {
+//             total = total + i
+//         }
+//         console.log(total)
+// }
+
+// addUp(12);
+
+//Exercice 6 - Time 
+
+function format(num) {
+    h = Math.floor(num/ 3600);
+    m = Math.floor(num% 3600 / 60);
+    s = Math.floor(num % 3600 % 60);
+
+        console.log(h,m,s);
+
 }
-    
-addUp(12);
+format(3700);
+
