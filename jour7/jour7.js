@@ -13,8 +13,51 @@
 
  //  Exercice 2 Map Double 
 
- let array = [1,2,3,4,5];
- var doubles = array.map(function(array) {
-    return array * 2;
-  });
-  console.log(doubles);
+//  let array = [1,2,3,4,5];
+//  var doubles = array.map(function(array) {
+//     return array * 2;
+//   });
+//   console.log(doubles);
+
+
+    // Exercice 3 Map Names
+
+    // let longNames=[
+    //     {
+    //         firstName: "Jane",
+    //         lastName: "Doe"
+    //     },
+    //     {
+    //         firstName: "John",
+    //         lastName: "Smith"
+    //     }
+    // ]
+
+    // let shortNames = longNames.map(  function (person){
+    //     // console.log("affichage de person", person);
+    //     let finallyName = {
+    //         name : person.firstName + " " + person.lastName      
+    //     }
+    //     //  let array = [finallyName];
+
+    //     // console.log(finallyName);
+    //     return finallyName;
+    
+    // })
+
+    // console.log(shortNames);
+
+     // Exercice 4 filter numbers 
+
+    //   let array = [ 1 , "toto",34,"javascript",8]
+      
+    //   let numbers = array.filter(function(num){
+    //       if(typeof num === "number" )
+    //       return num
+    //   })
+    //   console.log(numbers);
+     
+
+        // Exercice 5 filter even
+
+        
