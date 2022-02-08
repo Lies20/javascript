@@ -25,16 +25,54 @@
 
 // Exercice 2 Chuck Norris 
 
+// var request = require("request");
+
+// request.get("https://api.chucknorris.io/jokes/random", function  (err, res, body) {
+//     // console.log(err);
+//     // console.log(res.statusCode);
+//     console.log(body);
+
+//     let getJoke = JSON.parse(body);
+//     console.log(getJoke);
+
+//     let joke = getJoke.value;
+//     console.log(joke);
+// });
+
+
+// Exercice 3 pokémon 
+
 var request = require("request");
 
-request.get("https://api.chucknorris.io/jokes/random", function  (err, res, body) {
-    // console.log(err);
-    // console.log(res.statusCode);
-    console.log(body);
+// let pokemonSite = "https://pokeapi.co/api/v2/pokemon/"
 
-    let getJoke = JSON.parse(body);
-    console.log(getJoke);
+// request.get(pokemonSite, function (err, res, body) {
+//     // console.log(err);
+//     // console.log(res.statusCode);
+//     // console.log(body);
 
-    let joke = getJoke.value;
-    console.log(joke);
-});
+//     let pokemon =JSON.parse(body)
+//     console.log(pokemon);
+
+//     let pokemonSite = pokemonSite + id
+// });
+let pokemonSite = "https://pokeapi.co/api/v2/pokemon/1"
+
+function CatchPokemon (id){
+     
+   
+    
+    request.get(pokemonSite, function (err, res, body) {
+        // console.log(err);
+        // console.log(res.statusCode);
+        // console.log(body);
+    
+        let pokemon =JSON.parse(body)
+        // console.log(pokemon.name);
+    
+        pokemonSite = pokemonSite += id
+        console.log('nom du pokemon:'+''+ pokemon.name)
+    });
+    
+}
+CatchPokemon(4);
