@@ -48,8 +48,8 @@ const turnRight = (rover) => {
 }
 
 const moveForward = (rover) => {
-    console.log("moveForward was called")
-    console.log("test", rover)
+    // console.log("moveForward was called")
+    // console.log("test", rover)
     if (rover.direction === "E") {
         rover.x = rover.x + 1
     } else if (rover.direction === "S") {
@@ -57,53 +57,61 @@ const moveForward = (rover) => {
     } else if (rover.direction === "W") {
         rover.x = rover.x - 1    
     } else  if(rover.direction === "N") {
-       rover.x = rover.y - 1;
+       rover.y = rover.y - 1;
     }
 }
     // moveForward(rover)
 
-turnRight(rover);
-turnRight(rover);
-moveForward(rover);
-moveForward(rover);
-moveForward(rover);
-turnLeft(rover);
-moveForward(rover);
-moveForward(rover);
-moveForward(rover);
-moveForward(rover);
-turnLeft(rover);
-moveForward(rover);
-moveForward(rover);
-// moveForward(rover);
-turnLeft(rover);
-moveForward(rover);
-moveForward(rover);
-turnLeft(rover);
-moveForward(rover);
+
 
 
 // turnRight(rover);
 // moveForward(rover);
 
-// ;
+turnLeft(rover);
+turnLeft(rover);
+moveForward(rover);
+moveForward(rover);
+moveForward(rover);
+turnLeft(rover);
+moveForward(rover);
+moveForward(rover);
+moveForward(rover);
+turnLeft(rover);
+moveForward(rover);
+moveForward(rover);
+turnLeft(rover);
+moveForward(rover);
+turnLeft(rover);
+moveForward(rover);
+
+console.log(rover)
+// turnRight(rover);
+
+// turnLeft(rover);
+// turnLeft(rover);
+// moveForward(rover);
+// moveForward(rover);
 
 
-// const pilotRover = (str) => {
-//     let strBis = str.split('')
-//     // console.log(strBis);
-//     for (i = 0; i < strBis.length; i++)
-//         //  console.log("res",i)
-//         console.log(strBis[i])
-//     if (strBis[i] === "l") {
-//         turnLeft(rover);
-//     } else if (strBis[i] === "r"){
-//         turnRight(rover);
-//     } else if (strBis[i] === "f")
-//         moveForward(rover);
-//     }
 
 
-//     pilotRover("lllffffff");
+
+const pilotRover = (str) => {
+    let strBis = str.split('')
+    // console.log(strBis);
+    for (i = 0; i < strBis.length; i++)
+        //  console.log("res",i)
+        console.log(strBis[i])
+    if (strBis[i] === "l") {
+        turnLeft(rover);
+    } else if (strBis[i] === "r"){
+        turnRight(rover);
+    } else if (strBis[i] === "f")
+        moveForward(rover);
+    }
+
+
+    // pilotRover("lllffffff");
 
 
