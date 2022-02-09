@@ -69,3 +69,18 @@ const moveForward = (rover) => {
 turnRight(rover);
 moveForward(rover);
 
+let str = "lrf"
+let letters = str.split('');
+
+
+const pilotRover = (str) =>{
+    for(i = 0 ; i < str.length ; i++)
+             i ++
+
+    if( i === "l"){
+        turnLeft
+        console.log("res",i)
+    }
+}
+
+pilotRover(str);
