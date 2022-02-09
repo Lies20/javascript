@@ -15,6 +15,7 @@ let rover = {
     direction: "N",
     x: 0,
     y: 0,
+    travellog : [],
 };
 // console.log(rover)
 
@@ -52,6 +53,7 @@ const moveForward = (rover) => {
     // console.log("test", rover)
     if (rover.direction === "E") {
         rover.x = rover.x + 1
+        
     } else if (rover.direction === "S") {
         rover.y = rover.y + 1
     } else if (rover.direction === "W") {
@@ -59,6 +61,8 @@ const moveForward = (rover) => {
     } else  if(rover.direction === "N") {
        rover.y = rover.y - 1;
     }
+
+    rover.travellog.push( "x:",rover.x, "Y",rover.y )
 }
     // moveForward(rover)
 
@@ -105,6 +109,7 @@ const pilotRover = (str) => {
         console.log(strBis[i])
     if (strBis[i] === "l") {
         turnLeft(rover);
+
     } else if (strBis[i] === "r"){
         turnRight(rover);
     } else if (strBis[i] === "f")
@@ -112,6 +117,6 @@ const pilotRover = (str) => {
     }
 
 
-    // pilotRover("lllffffff");
+    pilotRover("lllffffff");
 
 
